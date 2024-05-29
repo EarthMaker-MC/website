@@ -31,7 +31,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`Welcome to EarthMaker!`}
-      description="Description will go into a meta tag in <head />">
+      description="We make earth maps for Minecraft.">
       <HomepageHeader />
       <main>
         <br />
