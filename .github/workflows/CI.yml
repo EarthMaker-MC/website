@@ -27,7 +27,7 @@ jobs:
         with:
           path: ${{env.STORE_PATH}}
           key: ${{runner.os}}-pnpm-cache-${{ hashFiles('./pnpm-lock.yaml')}}
-          restore-key: ${{runner.os}}-pnpm-cache-
+          restore-keys: ${{runner.os}}-pnpm-cache-
       - name: Install dependencies
         shell: bash
         run: pnpm install --frozen-lockfile
