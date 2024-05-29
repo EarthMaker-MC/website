@@ -17,6 +17,7 @@
   "dependencies": {
     "@docusaurus/core": "3.3.2",
     "@docusaurus/preset-classic": "3.3.2",
+    "@docusaurus/theme-common": "^3.3.2",
     "@mdx-js/react": "^3.0.1",
     "@skyra/discord-components-react": "^4.0.0-alpha.18",
     "clsx": "^2.1.1",
@@ -30,6 +31,7 @@
     "@docusaurus/module-type-aliases": "3.3.2",
     "@docusaurus/tsconfig": "3.3.2",
     "@docusaurus/types": "3.3.2",
+    "@types/react": "^18.3.3",
     "typescript": "~5.4.5"
   },
   "browserslist": {

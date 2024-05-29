@@ -37,7 +37,10 @@ export default function Home(): JSX.Element {
         <br />
         <br />
         <br />
-        <center><span style={{fontSize: "1.3rem", fontWeight: "bold"}}>We make Minecraft maps to 1:30 scale for Minecraft.</span></center>
+        <center><span style={{ fontSize: "1.3rem", fontWeight: "bold" }}>We make Minecraft maps to 1:30 scale for Minecraft.</span></center>
+        <br />
+        <br />
+        <br />
       </main>
     </Layout>
   );

@@ -3,9 +3,10 @@ sidebar-position: 2
 title: Claim maps
 ---
 
-import { DiscordActionRow, DiscordAttachments, DiscordButton, DiscordCode, DiscordEmbed, DiscordEmbedDescription, DiscordMessage, DiscordMessages, DiscordMention, DiscordReply } from "@skyra/discord-components-react";
+import { DiscordActionRow, DiscordAttachments, DiscordButton, DiscordCode, DiscordEmbed, DiscordEmbedDescription, DiscordMessage, DiscordMention, DiscordReply } from "@skyra/discord-components-react";
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import {CustomMessages} from "@site/src/components/CustomMessages"
 
 ### Why?
 The bot has been designed to work with both free and paid maps.
@@ -15,7 +16,7 @@ Open the #get-maps channel, and find the map you'd like to get. Then click the c
 
 If you're trying to claim a paid map, you will be prompted to purchase the map through Stripe.
 
-<DiscordMessages>
+<CustomMessages>
     <DiscordMessage author="EarthMaker Assistant" roleColor="#f1c40f" bot avatar="/img/assistant.webp">
         <DiscordEmbed color="#99FFCC" slot="embeds" image="/img/lorem-ipsum-dolor-sit-amet.png"embedTitle="Lorem ipsum" thumbnail="/img/dolor-sit-amet.png">
             <DiscordEmbedDescription slot="description">
@@ -40,11 +41,11 @@ If you're trying to claim a paid map, you will be prompted to purchase the map t
         </DiscordReply>
         You have unlocked the Lorem Ipsum map for free.
     </DiscordMessage>
-</DiscordMessages>
+</CustomMessages>
 
 ### Download the map
 Just press the "Get" button again. You will get a message that allows you to download the file, and will provide additional informations about the download.
-<DiscordMessages>
+<CustomMessages>
     <DiscordMessage author="EarthMaker Assistant" roleColor="#f1c40f" bot avatar="/img/assistant.webp">
         <DiscordEmbed color="#99FFCC" slot="embeds" image="/img/lorem-ipsum-dolor-sit-amet.png"embedTitle="Lorem ipsum" thumbnail="/img/dolor-sit-amet.png">
             <DiscordEmbedDescription slot="description">
@@ -82,7 +83,7 @@ Just press the "Get" button again. You will get a message that allows you to dow
             </DiscordActionRow>
         </DiscordAttachments>
     </DiscordMessage>
-</DiscordMessages>
+</CustomMessages>
 
 ### Verifying integrity of the maps
 Open your favorite terminal and launch the following command:
