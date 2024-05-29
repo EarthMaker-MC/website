@@ -1,0 +1,44 @@
+name: Deploy to the FTP
+
+on:
+  - push
+  - workflow_dispatch
+jobs:
+  deploy:
+    name: Deploy to FTP
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 #v4.1.6
+        name: Clone the repository
+      - uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 #v4.0.2
+        name: Install Node.JS
+        with:
+          node-version: 20.x
+      - uses: pnpm/action-setup@fe02b34f77f8bc703788d5817da081398fad5dd2 #v4.0.0
+        name: Install pnpm
+        with:
+          version: 9
+          run_install: false
+      - name: Get pnpm store directory
+        shell: bash
+        run: echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+      - name: Setup pnpm cache
+        uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9 #
+        with:
+          path: ${{env.STORE_PATH}}
+          key: ${{runner.os}}-pnpm-cache-${{ hashFiles('./pnpm-lock.yaml')}}
+          restore-key: ${{runner.os}}-pnpm-cache-
+      - name: Install dependencies
+        shell: bash
+        run: pnpm install --frozen-lockfile
+      - name: Build website
+        shell: bash
+        run: pnpm build
+      - name: Send built files to the FTP server
+        uses: SamKirkland/FTP-Deploy-Action@8e83cea8672e3fbcbb9fdafff34debf6ae4c5f65 #v4.3.5
+        with:
+          server: ${{secrets.FTP_HOST}}
+          username: ${{secrets.FTP_USERNAME}}
+          password: ${{secrets.FTP_PASSWORD}}
+          local-dir: ./build/
+          server-dir: /

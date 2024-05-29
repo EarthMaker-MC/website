@@ -1,0 +1,99 @@
+---
+sidebar-position: 2
+title: Claim maps
+---
+
+import { DiscordActionRow, DiscordAttachments, DiscordButton, DiscordCode, DiscordEmbed, DiscordEmbedDescription, DiscordMessage, DiscordMessages, DiscordMention, DiscordReply } from "@skyra/discord-components-react";
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+### Why?
+The bot has been designed to work with both free and paid maps.
+
+### How?
+Open the #get-maps channel, and find the map you'd like to get. Then click the claim button and *voilà*!
+
+If you're trying to claim a paid map, you will be prompted to purchase the map through Stripe.
+
+<DiscordMessages>
+    <DiscordMessage author="EarthMaker Assistant" roleColor="#f1c40f" bot avatar="/img/assistant.webp">
+        <DiscordEmbed color="#99FFCC" slot="embeds" image="/img/lorem-ipsum-dolor-sit-amet.png"embedTitle="Lorem ipsum" thumbnail="/img/dolor-sit-amet.png">
+            <DiscordEmbedDescription slot="description">
+                <ul style={{ paddingInlineStart: '20px', marginBlockStart: '0.5em' }}>
+                    <li>Size: ~42km2</li>
+                    <li>Version: 1.20</li>
+                    <li>Coordinates for Chunky border: 42 42 -42 -42</li>
+                    <li>Total download size: 42GB</li>
+                    <li>Price: 0€</li>
+                </ul>
+            </DiscordEmbedDescription>
+        </DiscordEmbed>
+        <DiscordAttachments slot="components">
+            <DiscordActionRow>
+                <DiscordButton type="primary" emoji-name="⬇️" emoji="/img/down-arrow.png" onClick={() => window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")}>Get</DiscordButton>
+            </DiscordActionRow>
+        </DiscordAttachments>
+    </DiscordMessage>
+    <DiscordMessage ephemeral author="EarthMaker Assistant" roleColor="#f1c40f" bot avatar="/img/assistant.webp">
+        <DiscordReply slot="reply" bot attachment author="EarthMaker Assistant" roleColor="#f1c40f" avatar="/img/assistant.webp">
+            <i>Click to see attachment</i>
+        </DiscordReply>
+        You have unlocked the Lorem Ipsum map for free.
+    </DiscordMessage>
+</DiscordMessages>
+
+### Download the map
+Just press the "Get" button again. You will get a message that allows you to download the file, and will provide additional informations about the download.
+<DiscordMessages>
+    <DiscordMessage author="EarthMaker Assistant" roleColor="#f1c40f" bot avatar="/img/assistant.webp">
+        <DiscordEmbed color="#99FFCC" slot="embeds" image="/img/lorem-ipsum-dolor-sit-amet.png"embedTitle="Lorem ipsum" thumbnail="/img/dolor-sit-amet.png">
+            <DiscordEmbedDescription slot="description">
+                <ul style={{ paddingInlineStart: '20px', marginBlockStart: '0.5em' }}>
+                    <li>Size: ~42km2</li>
+                    <li>Version: 1.20</li>
+                    <li>Coordinates for Chunky border: 42 42 -42 -42</li>
+                    <li>Price: 0€</li>
+                </ul>
+            </DiscordEmbedDescription>
+        </DiscordEmbed>
+        <DiscordAttachments slot="components">
+            <DiscordActionRow>
+                <DiscordButton type="primary" emoji-name="⬇️" emoji="/img/down-arrow.png" onClick={() => window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")}>Get</DiscordButton>
+            </DiscordActionRow>
+        </DiscordAttachments>
+    </DiscordMessage>
+    <DiscordMessage ephemeral author="EarthMaker Assistant" roleColor="#f1c40f" bot avatar="/img/assistant.webp">
+        <DiscordReply slot="reply" bot attachment author="EarthMaker Assistant" roleColor="#f1c40f" avatar="/img/assistant.webp">
+            <i>Click to see attachment</i>
+        </DiscordReply>
+        <DiscordEmbed color="#99FFCC" slot="embeds" embedTitle="Your download">
+            <DiscordEmbedDescription slot="description">
+                <ul style={{ paddingInlineStart: '20px', marginBlockStart: '0.5em' }}>
+                    <li>Filename: tominecon.7z</li>
+                    <li>MD5 hash: <DiscordCode multiline>07e087b30b0e2b5ce1654a5c4e1a2c0c</DiscordCode></li>
+                    <li>Part 1/2</li>
+                </ul>
+            </DiscordEmbedDescription>
+        </DiscordEmbed>
+        <DiscordAttachments slot="components">
+            <DiscordActionRow>
+                <DiscordButton type="success" emoji-name="⬇️" url="javascript:void()" emoji="/img/down-arrow.png" onClick={() => window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")}>Download</DiscordButton>
+                <DiscordButton type="success" emoji-name="➡️" emoji="/img/right-arrow.png" onClick={() => window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")}>Next file</DiscordButton>
+            </DiscordActionRow>
+        </DiscordAttachments>
+    </DiscordMessage>
+</DiscordMessages>
+
+### Verifying integrity of the maps
+Open your favorite terminal and launch the following command:
+<Tabs>
+    <TabItem default value="windows" label="Windows">
+        <code>powershell Get-FileHash [filename] -Algorithm MD5</code>
+    </TabItem>
+    <TabItem value="macos" label="macOS">
+        <code>md5 [filename]</code>
+    </TabItem>
+    <TabItem value="linux" label="Linux">
+        <code>md5sum [filename]</code>
+    </TabItem>
+</Tabs>
