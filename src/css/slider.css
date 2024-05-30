@@ -1,0 +1,7 @@
+.slick-dots button:before {
+    color: #000000 !important;
+}
+
+[data-theme="dark"] .slick-dots button:before {
+    color: #ffffff !important;
+}

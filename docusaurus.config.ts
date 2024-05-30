@@ -50,11 +50,17 @@ const config: Config = {
     ],
   ],
   plugins: [require.resolve("docusaurus-plugin-image-zoom"), [
-    require.resolve("docusaurus-plugin-search-local"),
-    {
-
+    require.resolve("docusaurus-plugin-search-local"),{}
+  ],
+  [
+    require.resolve("@docusaurus/plugin-content-docs"), {
+      id: "maps",
+      path: 'maps',
+      routeBasePath: "maps",
+      sidebarPath: './sidebarMaps.ts',
     }
-  ]],
+  ]
+],
   themeConfig: {
     zoom: {
       selector: '.markdown > img',
@@ -72,6 +78,13 @@ const config: Config = {
           sidebarId: 'documentation',
           position: 'left',
           label: 'Documentation',
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "maps",
+          position: "left",
+          label: "Our maps",
+          docsPluginId: "maps"
         },
         { to: '/blog', label: 'Blog', position: 'left' },
       ],
