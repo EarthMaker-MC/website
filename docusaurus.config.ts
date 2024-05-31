@@ -46,6 +46,10 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        sitemap: {
+          lastmod: "datetime",
+          
+        }
       } satisfies Preset.Options,
     ],
   ],
