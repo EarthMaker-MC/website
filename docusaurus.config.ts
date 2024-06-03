@@ -39,9 +39,11 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/earthmaker-mc/website/tree/master/',
+          showLastUpdateTime: true
         },
         blog: {
           showReadingTime: true,
+          showLastUpdateTime: true
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -62,6 +64,7 @@ const config: Config = {
       path: 'maps',
       routeBasePath: "maps",
       sidebarPath: './sidebarMaps.ts',
+      showLastUpdateTime: true
     }
   ]
 ],
