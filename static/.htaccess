@@ -5,10 +5,15 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
 RedirectMatch 404 /\.git
 # SECTION END GIT PROTECTION
 
+# No www.
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ https://%1%{REQUEST_URI} [R=301,QSA,NC,L]
 
+# Force https
 RewriteEngine On 
 RewriteCond %{HTTPS} off 
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# 404 Page
+ErrorDocument 404 /404.html
