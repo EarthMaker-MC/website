@@ -6,7 +6,7 @@ title: Claim maps
 import { DiscordActionRow, DiscordAttachments, DiscordButton, DiscordCode, DiscordEmbed, DiscordEmbedDescription, DiscordMessage, DiscordMention, DiscordReply } from "@skyra/discord-components-react";
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import {CustomMessages} from "@site/src/components/CustomMessages"
+import { CustomMessages } from "@site/src/components/CustomMessages"
 
 ### Why?
 The bot has been designed to work with both free and paid maps.
@@ -25,7 +25,7 @@ If you're trying to claim a paid map, you will be prompted to purchase the map t
                     <li>Version: 1.20</li>
                     <li>Coordinates for Chunky border: 42 42 -42 -42</li>
                     <li>Total download size: 42GB</li>
-                    <li>Price: 0€</li>
+                    <li>Price: Free!</li>
                 </ul>
             </DiscordEmbedDescription>
         </DiscordEmbed>
@@ -39,7 +39,11 @@ If you're trying to claim a paid map, you will be prompted to purchase the map t
         <DiscordReply slot="reply" bot attachment author="EarthMaker Assistant" roleColor="#f1c40f" avatar="/img/assistant.webp">
             <i>Click to see attachment</i>
         </DiscordReply>
-        You have unlocked the Lorem Ipsum map for free.
+        <DiscordEmbed color="#99FFCC" slot="embeds" embedTitle="Success!">
+            <DiscordEmbedDescription slot="description">
+                You've unlocked the Lorem Ipsum map for free! Press the "Get" button again to download.
+            </DiscordEmbedDescription>
+        </DiscordEmbed>
     </DiscordMessage>
 </CustomMessages>
 
@@ -52,14 +56,14 @@ Just press the "Get" button again. You will get a message that allows you to dow
                 <ul style={{ paddingInlineStart: '20px', marginBlockStart: '0.5em' }}>
                     <li>Size: ~42km2</li>
                     <li>Version: 1.20</li>
-                    <li>Coordinates for Chunky border: 42 42 -42 -42</li>
-                    <li>Price: 0€</li>
+                    <li>Price: Free!</li>
                 </ul>
             </DiscordEmbedDescription>
         </DiscordEmbed>
         <DiscordAttachments slot="components">
             <DiscordActionRow>
                 <DiscordButton type="primary" emoji-name="⬇️" emoji="/img/down-arrow.png" onClick={() => window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")}>Get</DiscordButton>
+                <DiscordButton type="success" url="javascript:void()" onClick={() => window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")}>Learn more</DiscordButton>
             </DiscordActionRow>
         </DiscordAttachments>
     </DiscordMessage>
@@ -79,7 +83,7 @@ Just press the "Get" button again. You will get a message that allows you to dow
         <DiscordAttachments slot="components">
             <DiscordActionRow>
                 <DiscordButton type="success" emoji-name="⬇️" url="javascript:void()" emoji="/img/down-arrow.png" onClick={() => window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")}>Download</DiscordButton>
-                <DiscordButton type="success" emoji-name="➡️" emoji="/img/right-arrow.png" onClick={() => window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")}>Next file</DiscordButton>
+                <DiscordButton type="secondary" emoji-name="➡️" emoji="/img/right-arrow.png" onClick={() => window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")}>Download next</DiscordButton>
             </DiscordActionRow>
         </DiscordAttachments>
     </DiscordMessage>
