@@ -24,6 +24,7 @@ function HomepageHeader() {
           >
             Get started
           </Link>
+          {" "}
           <Link
             className="button button--secondary button--lg"
             href="/maps"
