@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import styles from './index.module.css';
+import Link from '@docusaurus/Link';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -17,12 +18,18 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <a
+          <Link
             className="button button--secondary button--lg"
-            href="https://download.earthmaker.world"
-            target="_blank">
-            Get started, join our Discord
-          </a>
+            href="/docs/getting-started/join-discord"
+          >
+            Get started
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            href="/maps"
+          >
+            Take a look at our maps
+          </Link>
         </div>
       </div>
     </header>
