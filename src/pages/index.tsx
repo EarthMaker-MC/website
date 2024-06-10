@@ -20,7 +20,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            href="/docs/getting-started/join-discord"
+            href="/docs/getting-started/discord"
           >
             Get started
           </Link>
