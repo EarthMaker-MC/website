@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import styles from './index.module.css';
 import Link from '@docusaurus/Link';
+import HomeFeatures from '../components/HomeFeatures';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -56,6 +57,7 @@ export default function Home(): JSX.Element {
         <br />
         <br />
         <br />
+        <HomeFeatures />
       </main>
     </Layout>
   );
