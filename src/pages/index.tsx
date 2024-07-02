@@ -17,22 +17,25 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            href="/docs/getting-started/discord"
-            style={{ margin: "30px" }}
-          >
-            Get started
-          </Link>
-
-          <Link
-            className="button button--secondary button--lg"
-            href="/maps"
-            style={{ margin: "30px" }}
-          >
-            Take a look at our maps
-          </Link>
+        <div className={styles.buttonsContainer}>
+          <div className={styles.buttons}>
+            <div>
+              <Link
+                className="button button--secondary button--lg"
+                href="/docs/getting-started/discord"
+              >
+                Get started
+              </Link>
+            </div>
+            <div>
+              <Link
+                className="button button--secondary button--lg"
+                href="/maps"
+              >
+                Take a look at our maps
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </header>
