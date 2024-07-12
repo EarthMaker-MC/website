@@ -113,6 +113,11 @@ const config: Config = {
               target: "_BLANK"
             },
             {
+              label: "GitHub",
+              href: "https://github.com/earthmaker-mc",
+              target: "_BLANK"
+            },
+            {
               label: "RSS feed",
               href: "/blog/rss.xml",
               target: "_BLANK"
