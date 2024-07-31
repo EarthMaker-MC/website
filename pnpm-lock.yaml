@@ -21,8 +21,8 @@ importers:
         specifier: ^3.0.1
         version: 3.0.1(@types/react@18.3.3)(react@18.3.1)
       '@skyra/discord-components-react':
-        specifier: ^4.0.0-alpha.18
-        version: 4.0.0-alpha.18(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^4.0.0-alpha.24
+        version: 4.0.0-alpha.24(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -1015,8 +1015,8 @@ packages:
   '@lit-labs/ssr-dom-shim@1.2.0':
     resolution: {integrity: sha512-yWJKmpGE6lUURKAaIltoPIE/wrbY3TEkqQt+X0m+7fQNnAv0keydnYvbiJFP1PnMhizmIWRWOG5KLhYyc/xl+g==}
 
-  '@lit/context@1.1.1':
-    resolution: {integrity: sha512-q/Rw7oWSJidUP43f/RUPwqZ6f5VlY8HzinTWxL/gW1Hvm2S5q2hZvV+qM8WFcC+oLNNknc3JKsd5TwxLk1hbdg==}
+  '@lit/context@1.1.2':
+    resolution: {integrity: sha512-S0nw2C6Tkm7fVX5TGYqeROGD+Z9Coa2iFpW+ysYBDH3YvCqOY3wVQvSgwbaliLJkjTnSEYCBe9qFqKV8WUFpVw==}
 
   '@lit/react@1.0.5':
     resolution: {integrity: sha512-RSHhrcuSMa4vzhqiTenzXvtQ6QDq3hSPsnHHO3jaPmmvVFeoNNm4DHoQ0zLdKAUvY3wP3tTENSUf7xpyVfrDEA==}
@@ -1087,12 +1087,12 @@ packages:
     resolution: {integrity: sha512-TV7t8GKYaJWsn00tFDqBw8+Uqmr8A0fRU1tvTQhyZzGv0sJCGRQL3JGMI3ucuKo3XIZdUP+Lx7/gh2t3lewy7g==}
     engines: {node: '>=14.16'}
 
-  '@skyra/discord-components-core@4.0.0-alpha.18':
-    resolution: {integrity: sha512-2afTOSIlY8VdMSIC7Goc7P7crIyvUQCgcu5BPxaZc6SaG/kmmDDY+D/C5vB+j4cMa1a2UBXjjqXALRnx3fbGGQ==}
+  '@skyra/discord-components-core@4.0.0-alpha.24':
+    resolution: {integrity: sha512-V2m3xSIG37KS/tKfNo6rZ+W9M4NfjVAhdP5M2YQgOPcoJjdhdT3ZXdZiuaf0/IqM4jZuluuaVpQyth5jrfYWjw==}
     engines: {node: '>=v18'}
 
-  '@skyra/discord-components-react@4.0.0-alpha.18':
-    resolution: {integrity: sha512-Qz7rSJN5btYtiIR2Ng8opJwKEEfeenJ3nGjLtjteOivkwRiz6d5X4L22HuE7z4Tif5+Cs81Wb+TSEz9t+IfYGg==}
+  '@skyra/discord-components-react@4.0.0-alpha.24':
+    resolution: {integrity: sha512-hF9a5NoLHmGWmKqsxafXzwM8CalPAcFjnKFL3rTTWS48kH5YAYTqdcFkZdkjBGsg5Cq7DMtdn9/GgmjFv9TFXA==}
     engines: {node: '>=v18'}
     peerDependencies:
       react: 16.8.x || 17.x || 18.x
@@ -2942,8 +2942,8 @@ packages:
   lit-html@3.1.3:
     resolution: {integrity: sha512-FwIbqDD8O/8lM4vUZ4KvQZjPPNx7V1VhT7vmRB8RBAO0AU6wuTVdoXiu2CivVjEGdugvcbPNBLtPE1y0ifplHA==}
 
-  lit@3.1.3:
-    resolution: {integrity: sha512-l4slfspEsnCcHVRTvaP7YnkTZEZggNFywLEIhQaGhYDczG+tu/vlgm/KaWIEjIp+ZyV20r2JnZctMb8LeLCG7Q==}
+  lit@3.1.4:
+    resolution: {integrity: sha512-q6qKnKXHy2g1kjBaNfcoLlgbI3+aSOZ9Q4tiGa9bGYXq5RBXxkVTqTIVmP2VWMp29L4GyvCFm8ZQ2o56eUAMyA==}
 
   loader-runner@4.3.0:
     resolution: {integrity: sha512-3R/1M+yS3j5ou80Me59j7F9IMs4PXs3VqRrm0TU3AbKPxlmpoY1TNscJV/oGJXo8qCatFGTfDbY6W6ipGOYXfg==}
@@ -6304,7 +6304,7 @@ snapshots:
 
   '@lit-labs/ssr-dom-shim@1.2.0': {}
 
-  '@lit/context@1.1.1':
+  '@lit/context@1.1.2':
     dependencies:
       '@lit/reactive-element': 2.0.4
 
@@ -6362,9 +6362,9 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@open-wc/lit-helpers@0.7.0(lit@3.1.3)':
+  '@open-wc/lit-helpers@0.7.0(lit@3.1.4)':
     dependencies:
-      lit: 3.1.3
+      lit: 3.1.4
 
   '@pnpm/config.env-replace@1.1.0': {}
 
@@ -6394,16 +6394,16 @@ snapshots:
 
   '@sindresorhus/is@5.6.0': {}
 
-  '@skyra/discord-components-core@4.0.0-alpha.18':
+  '@skyra/discord-components-core@4.0.0-alpha.24':
     dependencies:
-      '@lit/context': 1.1.1
-      '@open-wc/lit-helpers': 0.7.0(lit@3.1.3)
-      lit: 3.1.3
+      '@lit/context': 1.1.2
+      '@open-wc/lit-helpers': 0.7.0(lit@3.1.4)
+      lit: 3.1.4
 
-  '@skyra/discord-components-react@4.0.0-alpha.18(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@skyra/discord-components-react@4.0.0-alpha.24(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@lit/react': 1.0.5(@types/react@18.3.3)
-      '@skyra/discord-components-core': 4.0.0-alpha.18
+      '@skyra/discord-components-core': 4.0.0-alpha.24
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     transitivePeerDependencies:
@@ -8460,7 +8460,7 @@ snapshots:
     dependencies:
       '@types/trusted-types': 2.0.7
 
-  lit@3.1.3:
+  lit@3.1.4:
     dependencies:
       '@lit/reactive-element': 2.0.4
       lit-element: 4.0.5
