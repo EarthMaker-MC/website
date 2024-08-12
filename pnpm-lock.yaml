@@ -21,8 +21,8 @@ importers:
         specifier: ^3.0.1
         version: 3.0.1(@types/react@18.3.3)(react@18.3.1)
       '@skyra/discord-components-react':
-        specifier: ^4.0.0-alpha.18
-        version: 4.0.0-alpha.18(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^4.0.0-alpha.29
+        version: 4.0.0-alpha.29(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -1015,8 +1015,8 @@ packages:
   '@lit-labs/ssr-dom-shim@1.2.0':
     resolution: {integrity: sha512-yWJKmpGE6lUURKAaIltoPIE/wrbY3TEkqQt+X0m+7fQNnAv0keydnYvbiJFP1PnMhizmIWRWOG5KLhYyc/xl+g==}
 
-  '@lit/context@1.1.1':
-    resolution: {integrity: sha512-q/Rw7oWSJidUP43f/RUPwqZ6f5VlY8HzinTWxL/gW1Hvm2S5q2hZvV+qM8WFcC+oLNNknc3JKsd5TwxLk1hbdg==}
+  '@lit/context@1.1.2':
+    resolution: {integrity: sha512-S0nw2C6Tkm7fVX5TGYqeROGD+Z9Coa2iFpW+ysYBDH3YvCqOY3wVQvSgwbaliLJkjTnSEYCBe9qFqKV8WUFpVw==}
 
   '@lit/react@1.0.5':
     resolution: {integrity: sha512-RSHhrcuSMa4vzhqiTenzXvtQ6QDq3hSPsnHHO3jaPmmvVFeoNNm4DHoQ0zLdKAUvY3wP3tTENSUf7xpyVfrDEA==}
@@ -1046,11 +1046,6 @@ packages:
   '@nodelib/fs.walk@1.2.8':
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
-
-  '@open-wc/lit-helpers@0.7.0':
-    resolution: {integrity: sha512-4NBlx5ve0EvZplCRJbESm0MdMbRCw16alP2y76KAAAwzmFFXXrUj5hFwhw55+sSg5qaRRx6sY+s7usKgnNo3TQ==}
-    peerDependencies:
-      lit: ^2.0.0 || ^3.0.0
 
   '@pnpm/config.env-replace@1.1.0':
     resolution: {integrity: sha512-htyl8TWnKL7K/ESFa1oW2UB5lVDxuF5DpM7tBi6Hu2LNL3mWkIzNLG6N4zoCUP1lCKNxWy/3iu8mS8MvToGd6w==}
@@ -1087,12 +1082,12 @@ packages:
     resolution: {integrity: sha512-TV7t8GKYaJWsn00tFDqBw8+Uqmr8A0fRU1tvTQhyZzGv0sJCGRQL3JGMI3ucuKo3XIZdUP+Lx7/gh2t3lewy7g==}
     engines: {node: '>=14.16'}
 
-  '@skyra/discord-components-core@4.0.0-alpha.18':
-    resolution: {integrity: sha512-2afTOSIlY8VdMSIC7Goc7P7crIyvUQCgcu5BPxaZc6SaG/kmmDDY+D/C5vB+j4cMa1a2UBXjjqXALRnx3fbGGQ==}
+  '@skyra/discord-components-core@4.0.0-alpha.29':
+    resolution: {integrity: sha512-5xChuKoeFWQvUYRsytGQqi2Z/BUEtzcMwhsdmlD+qt3zu0RU9hRF6FkZy2IAEeHRa3fM39JP3n9NEY/FeprSoA==}
     engines: {node: '>=v18'}
 
-  '@skyra/discord-components-react@4.0.0-alpha.18':
-    resolution: {integrity: sha512-Qz7rSJN5btYtiIR2Ng8opJwKEEfeenJ3nGjLtjteOivkwRiz6d5X4L22HuE7z4Tif5+Cs81Wb+TSEz9t+IfYGg==}
+  '@skyra/discord-components-react@4.0.0-alpha.29':
+    resolution: {integrity: sha512-eqxbbFBHRlSjkwiFJl+KNoLcplUMTSSA/8KjyTuivbXawvIxwMuNWVTE57s0CVdkgmMGCHgzvkwRLuRoYDHd5g==}
     engines: {node: '>=v18'}
     peerDependencies:
       react: 16.8.x || 17.x || 18.x
@@ -2936,14 +2931,14 @@ packages:
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
-  lit-element@4.0.5:
-    resolution: {integrity: sha512-iTWskWZEtn9SyEf4aBG6rKT8GABZMrTWop1+jopsEOgEcugcXJGKuX5bEbkq9qfzY+XB4MAgCaSPwnNpdsNQ3Q==}
+  lit-element@4.1.0:
+    resolution: {integrity: sha512-gSejRUQJuMQjV2Z59KAS/D4iElUhwKpIyJvZ9w+DIagIQjfJnhR20h2Q5ddpzXGS+fF0tMZ/xEYGMnKmaI/iww==}
 
-  lit-html@3.1.3:
-    resolution: {integrity: sha512-FwIbqDD8O/8lM4vUZ4KvQZjPPNx7V1VhT7vmRB8RBAO0AU6wuTVdoXiu2CivVjEGdugvcbPNBLtPE1y0ifplHA==}
+  lit-html@3.2.0:
+    resolution: {integrity: sha512-pwT/HwoxqI9FggTrYVarkBKFN9MlTUpLrDHubTmW4SrkL3kkqW5gxwbxMMUnbbRHBC0WTZnYHcjDSCM559VyfA==}
 
-  lit@3.1.3:
-    resolution: {integrity: sha512-l4slfspEsnCcHVRTvaP7YnkTZEZggNFywLEIhQaGhYDczG+tu/vlgm/KaWIEjIp+ZyV20r2JnZctMb8LeLCG7Q==}
+  lit@3.2.0:
+    resolution: {integrity: sha512-s6tI33Lf6VpDu7u4YqsSX78D28bYQulM+VAzsGch4fx2H0eLZnJsUBsPWmGYSGoKDNbjtRv02rio1o+UdPVwvw==}
 
   loader-runner@4.3.0:
     resolution: {integrity: sha512-3R/1M+yS3j5ou80Me59j7F9IMs4PXs3VqRrm0TU3AbKPxlmpoY1TNscJV/oGJXo8qCatFGTfDbY6W6ipGOYXfg==}
@@ -6304,7 +6299,7 @@ snapshots:
 
   '@lit-labs/ssr-dom-shim@1.2.0': {}
 
-  '@lit/context@1.1.1':
+  '@lit/context@1.1.2':
     dependencies:
       '@lit/reactive-element': 2.0.4
 
@@ -6362,10 +6357,6 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@open-wc/lit-helpers@0.7.0(lit@3.1.3)':
-    dependencies:
-      lit: 3.1.3
-
   '@pnpm/config.env-replace@1.1.0': {}
 
   '@pnpm/network.ca-file@1.0.2':
@@ -6394,16 +6385,15 @@ snapshots:
 
   '@sindresorhus/is@5.6.0': {}
 
-  '@skyra/discord-components-core@4.0.0-alpha.18':
+  '@skyra/discord-components-core@4.0.0-alpha.29':
     dependencies:
-      '@lit/context': 1.1.1
-      '@open-wc/lit-helpers': 0.7.0(lit@3.1.3)
-      lit: 3.1.3
+      '@lit/context': 1.1.2
+      lit: 3.2.0
 
-  '@skyra/discord-components-react@4.0.0-alpha.18(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@skyra/discord-components-react@4.0.0-alpha.29(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@lit/react': 1.0.5(@types/react@18.3.3)
-      '@skyra/discord-components-core': 4.0.0-alpha.18
+      '@skyra/discord-components-core': 4.0.0-alpha.29
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     transitivePeerDependencies:
@@ -8450,21 +8440,21 @@ snapshots:
 
   lines-and-columns@1.2.4: {}
 
-  lit-element@4.0.5:
+  lit-element@4.1.0:
     dependencies:
       '@lit-labs/ssr-dom-shim': 1.2.0
       '@lit/reactive-element': 2.0.4
-      lit-html: 3.1.3
+      lit-html: 3.2.0
 
-  lit-html@3.1.3:
+  lit-html@3.2.0:
     dependencies:
       '@types/trusted-types': 2.0.7
 
-  lit@3.1.3:
+  lit@3.2.0:
     dependencies:
       '@lit/reactive-element': 2.0.4
-      lit-element: 4.0.5
-      lit-html: 3.1.3
+      lit-element: 4.1.0
+      lit-html: 3.2.0
 
   loader-runner@4.3.0: {}
 
