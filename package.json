@@ -32,7 +32,7 @@
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.5.1",
     "@docusaurus/tsconfig": "^3.5.1",
-    "@docusaurus/types": "3.4.0",
+    "@docusaurus/types": "3.5.1",
     "@types/react": "^18.3.3",
     "@types/react-slick": "^0.23.13",
     "@types/slick-carousel": "^1.6.40",
