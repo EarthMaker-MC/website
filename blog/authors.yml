@@ -1,5 +1,10 @@
 geek:
   name: GeekCorner
-  title: Full-time geek
-  url: https://github.com/GeekCornerGH
+  title: Founder of EarthMaker
+  page: true
+  description: Full-time geek, developer and gamer on my free time.
   image_url: /img/avatars/geek.png
+  email: NotTodayThankYou
+  socials:
+    github: GeekCornerGH
+    Website: https://docs.geekcorner.eu.org
