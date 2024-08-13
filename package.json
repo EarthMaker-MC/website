@@ -15,9 +15,9 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@docusaurus/core": "3.5.1",
-    "@docusaurus/preset-classic": "3.5.1",
-    "@docusaurus/theme-common": "^3.4.0",
+    "@docusaurus/core": "^3.5.1",
+    "@docusaurus/preset-classic": "^3.5.1",
+    "@docusaurus/theme-common": "^3.5.1",
     "@mdx-js/react": "^3.0.1",
     "@skyra/discord-components-react": "^4.0.0-alpha.29",
     "clsx": "^2.1.1",
@@ -30,8 +30,8 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.4.0",
-    "@docusaurus/tsconfig": "3.4.0",
+    "@docusaurus/module-type-aliases": "^3.5.1",
+    "@docusaurus/tsconfig": "^3.5.1",
     "@docusaurus/types": "3.4.0",
     "@types/react": "^18.3.3",
     "@types/react-slick": "^0.23.13",
