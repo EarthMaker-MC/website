@@ -11,7 +11,6 @@ export default function FooterWrapper(props: Props): JSX.Element {
   const { metadata } = useDoc();
   const { frontMatter, permalink } = metadata;
   const { showComments = true } = frontMatter;
-  console.log(metadata);
 
   return (
     <>

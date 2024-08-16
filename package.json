@@ -15,12 +15,12 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@docusaurus/plugin-content-blog": "^3.5.2",
-    "@docusaurus/plugin-content-docs": "^3.5.2",
+    "@docusaurus/core": "^0.0.0-6037",
+    "@docusaurus/plugin-content-blog": "^0.0.0-6037",
+    "@docusaurus/plugin-content-docs": "^0.0.0-6037",
+    "@docusaurus/preset-classic": "^0.0.0-6037",
+    "@docusaurus/theme-common": "^0.0.0-6037",
     "@giscus/react": "^3.0.0",
-    "@docusaurus/core": "^3.5.2",
-    "@docusaurus/preset-classic": "^3.5.2",
-    "@docusaurus/theme-common": "^3.5.2",
     "@mdx-js/react": "^3.0.1",
     "@skyra/discord-components-react": "^4.0.0-alpha.29",
     "clsx": "^2.1.1",
@@ -33,13 +33,13 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.5.2",
-    "@docusaurus/tsconfig": "^3.5.2",
-    "@docusaurus/types": "3.5.2",
+    "@docusaurus/module-type-aliases": "^0.0.0-6037",
+    "@docusaurus/tsconfig": "^0.0.0-6037",
+    "@docusaurus/types": "^0.0.0-6037",
     "@types/react": "^18.3.3",
     "@types/react-slick": "^0.23.13",
     "@types/slick-carousel": "^1.6.40",
-    "typescript": "~5.5.4"
+    "typescript": "^5.5.4"
   },
   "browserslist": {
     "production": [
@@ -55,5 +55,10 @@
   },
   "engines": {
     "node": ">=20.0"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "docusaurus-plugin-search-local@2.0.1": "patches/docusaurus-plugin-search-local@2.0.1.patch"
+    }
   }
 }
