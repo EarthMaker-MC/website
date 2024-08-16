@@ -14,7 +14,7 @@ updates:
     groups:
       docusaurus:
         patterns:
-          - "@docusaurus/"
+          - "@docusaurus/*"
   - package-ecosystem: "github-actions"
     directory: "/"
     reviewers:
