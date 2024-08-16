@@ -15,6 +15,9 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@docusaurus/plugin-content-blog": "^3.5.2",
+    "@docusaurus/plugin-content-docs": "^3.5.2",
+    "@giscus/react": "^3.0.0",
     "@docusaurus/core": "^3.5.2",
     "@docusaurus/preset-classic": "^3.5.2",
     "@docusaurus/theme-common": "^3.5.2",
