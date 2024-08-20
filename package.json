@@ -15,11 +15,11 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@docusaurus/core": "^0.0.0-6037",
-    "@docusaurus/plugin-content-blog": "^0.0.0-6037",
-    "@docusaurus/plugin-content-docs": "^0.0.0-6037",
-    "@docusaurus/preset-classic": "^0.0.0-6037",
-    "@docusaurus/theme-common": "^0.0.0-6037",
+    "@docusaurus/core": "^0.0.0-6044",
+    "@docusaurus/plugin-content-blog": "^0.0.0-6044",
+    "@docusaurus/plugin-content-docs": "^0.0.0-6044",
+    "@docusaurus/preset-classic": "^0.0.0-6044",
+    "@docusaurus/theme-common": "^0.0.0-6044",
     "@giscus/react": "^3.0.0",
     "@mdx-js/react": "^3.0.1",
     "@skyra/discord-components-react": "^4.0.0-alpha.31",
@@ -33,9 +33,9 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^0.0.0-6037",
-    "@docusaurus/tsconfig": "^0.0.0-6037",
-    "@docusaurus/types": "^0.0.0-6037",
+    "@docusaurus/module-type-aliases": "^0.0.0-6044",
+    "@docusaurus/tsconfig": "^0.0.0-6044",
+    "@docusaurus/types": "^0.0.0-6044",
     "@types/react": "^18.3.3",
     "@types/react-slick": "^0.23.13",
     "@types/slick-carousel": "^1.6.40",
