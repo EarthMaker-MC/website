@@ -35,8 +35,8 @@ importers:
         specifier: ^3.0.1
         version: 3.0.1(@types/react@18.3.3)(react@18.3.1)
       '@skyra/discord-components-react':
-        specifier: ^4.0.0-alpha.29
-        version: 4.0.0-alpha.29(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^4.0.0-alpha.31
+        version: 4.0.0-alpha.31(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -1204,12 +1204,12 @@ packages:
     resolution: {integrity: sha512-TV7t8GKYaJWsn00tFDqBw8+Uqmr8A0fRU1tvTQhyZzGv0sJCGRQL3JGMI3ucuKo3XIZdUP+Lx7/gh2t3lewy7g==}
     engines: {node: '>=14.16'}
 
-  '@skyra/discord-components-core@4.0.0-alpha.29':
-    resolution: {integrity: sha512-5xChuKoeFWQvUYRsytGQqi2Z/BUEtzcMwhsdmlD+qt3zu0RU9hRF6FkZy2IAEeHRa3fM39JP3n9NEY/FeprSoA==}
+  '@skyra/discord-components-core@4.0.0-alpha.31':
+    resolution: {integrity: sha512-YAgoWkpGnZcWfJPjfOX5zqg48NaACQeaBbEs5BUnl+pKbiXpcRY+G9LIZfrd+ztu280OJmdoGEKFOWA/07mqkg==}
     engines: {node: '>=v18'}
 
-  '@skyra/discord-components-react@4.0.0-alpha.29':
-    resolution: {integrity: sha512-eqxbbFBHRlSjkwiFJl+KNoLcplUMTSSA/8KjyTuivbXawvIxwMuNWVTE57s0CVdkgmMGCHgzvkwRLuRoYDHd5g==}
+  '@skyra/discord-components-react@4.0.0-alpha.31':
+    resolution: {integrity: sha512-OlCVuGiVlhO+8bF7kkoWQNLSpVR4w1qm+x2KxrpfP87IIryZuZ3YilJdRIGAqfz15HOeBU2IdNEhN9dyVFze4w==}
     engines: {node: '>=v18'}
     peerDependencies:
       react: 16.8.x || 17.x || 18.x
@@ -7003,15 +7003,15 @@ snapshots:
 
   '@sindresorhus/is@5.6.0': {}
 
-  '@skyra/discord-components-core@4.0.0-alpha.29':
+  '@skyra/discord-components-core@4.0.0-alpha.31':
     dependencies:
       '@lit/context': 1.1.2
       lit: 3.2.0
 
-  '@skyra/discord-components-react@4.0.0-alpha.29(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@skyra/discord-components-react@4.0.0-alpha.31(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@lit/react': 1.0.5(@types/react@18.3.3)
-      '@skyra/discord-components-core': 4.0.0-alpha.29
+      '@skyra/discord-components-core': 4.0.0-alpha.31
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     transitivePeerDependencies:
