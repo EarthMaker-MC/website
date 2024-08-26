@@ -22,7 +22,7 @@
     "@docusaurus/theme-common": "^0.0.0-6055",
     "@giscus/react": "^3.0.0",
     "@mdx-js/react": "^3.0.1",
-    "@skyra/discord-components-react": "^4.0.0-alpha.31",
+    "@skyra/discord-components-react": "^4.0.0-alpha.33",
     "clsx": "^2.1.1",
     "docusaurus-plugin-image-zoom": "^2.0.0",
     "docusaurus-plugin-search-local": "^2.0.1",
