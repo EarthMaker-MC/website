@@ -17,7 +17,7 @@ export default function GiscusComments() {
         strict="1"
         reactionsEnabled="1"
         inputPosition="top"
-        theme={colorMode}
+        theme="https://raw.githubusercontent.com/catppuccin/giscus/refs/heads/main/themes/mocha.css"
         lang={currentLocale}
         loading="lazy"
     />
