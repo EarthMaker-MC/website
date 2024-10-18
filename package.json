@@ -21,7 +21,7 @@
     "@docusaurus/preset-classic": "^0.0.0-6106",
     "@docusaurus/theme-common": "^0.0.0-6106",
     "@giscus/react": "^3.0.0",
-    "@mdx-js/react": "^3.0.1",
+    "@mdx-js/react": "^3.1.0",
     "@skyra/discord-components-react": "^4.0.0-alpha.34",
     "clsx": "^2.1.1",
     "docusaurus-plugin-image-zoom": "^2.0.0",
