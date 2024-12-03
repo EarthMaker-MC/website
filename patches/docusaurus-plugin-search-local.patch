@@ -1,5 +1,5 @@
 diff --git a/package.json b/package.json
-index c5c92de9ac0cc2f025a97579ae95a63a2c76ef0b..a55d4cc2a1c8ec261d2192ad4fb7c601758859de 100644
+index 5c15c0a7b0b2b4540994f3a99d4f67ea812555e3..84bbfe01649d5392ce316929ad3918f68914da10 100644
 --- a/package.json
 +++ b/package.json
 @@ -94,9 +94,9 @@
@@ -9,9 +9,9 @@ index c5c92de9ac0cc2f025a97579ae95a63a2c76ef0b..a55d4cc2a1c8ec261d2192ad4fb7c601
 -    "@docusaurus/core": ">=3.0.0",
 -    "@docusaurus/utils": ">=3.0.0",
 -    "@docusaurus/utils-validation": ">=3.0.0",
-+    "@docusaurus/core": ">=3.0.0||^0.0.0",
-+    "@docusaurus/utils": ">=3.0.0||^0.0.0",
-+    "@docusaurus/utils-validation": ">=3.0.0||^0.0.0",
++    "@docusaurus/core": "^0.0.0 || >=3.0.0",
++    "@docusaurus/utils": "^0.0.0 || >=3.0.0",
++    "@docusaurus/utils-validation": "^0.0.0 || >=3.0.0",
      "react": ">=18.2.0",
      "react-dom": ">=18.2.0"
    },

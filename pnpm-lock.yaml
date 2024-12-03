@@ -5,9 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 patchedDependencies:
-  docusaurus-plugin-search-local@2.1.0:
-    hash: pcoapu34hwi2fwjnurwqun6wrq
-    path: patches/docusaurus-plugin-search-local@2.1.0.patch
+  docusaurus-plugin-search-local:
+    hash: a6v4izij2uj7ekkf2orkb55qpu
+    path: patches/docusaurus-plugin-search-local.patch
 
 importers:
 
@@ -44,8 +44,8 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0(@docusaurus/theme-classic@3.6.2(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2))
       docusaurus-plugin-search-local:
-        specifier: ^2.1.0
-        version: 2.1.0(patch_hash=pcoapu34hwi2fwjnurwqun6wrq)(@docusaurus/core@0.0.0-6119(@docusaurus/types@0.0.0-6119(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@mdx-js/react@3.1.0(@types/react@18.3.12)(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2))(@docusaurus/utils-validation@3.6.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2))(@docusaurus/utils@3.6.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^2.1.2
+        version: 2.1.2(patch_hash=a6v4izij2uj7ekkf2orkb55qpu)(@docusaurus/core@0.0.0-6119(@docusaurus/types@0.0.0-6119(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@mdx-js/react@3.1.0(@types/react@18.3.12)(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2))(@docusaurus/utils-validation@3.6.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2))(@docusaurus/utils@3.6.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prism-react-renderer:
         specifier: ^2.4.0
         version: 2.4.0(react@18.3.1)
@@ -2388,8 +2388,8 @@ packages:
     peerDependencies:
       '@docusaurus/theme-classic': '>=3.0.0'
 
-  docusaurus-plugin-search-local@2.1.0:
-    resolution: {integrity: sha512-pHQ1UffJ33IDUZ3e5/FFcfX5ktnza4KCi5ivK7ndKJjeU4GyQdUb5/WsCQ5z0+V3GIFL3GmB1C/kOU0wUZFJnQ==}
+  docusaurus-plugin-search-local@2.1.2:
+    resolution: {integrity: sha512-cnCrEzMlXyDOyGtiojlCHNKDiZfPIljqzS+A8zi5J0EIMb1co5QKW/3t5OhdRXDgTRY/gVWPyaart9l2pACV0A==}
     engines: {node: '>=18.18.2'}
     peerDependencies:
       '@docusaurus/core': '>=3.0.0'
@@ -8802,7 +8802,7 @@ snapshots:
       medium-zoom: 1.1.0
       validate-peer-dependencies: 2.2.0
 
-  docusaurus-plugin-search-local@2.1.0(patch_hash=pcoapu34hwi2fwjnurwqun6wrq)(@docusaurus/core@0.0.0-6119(@docusaurus/types@0.0.0-6119(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@mdx-js/react@3.1.0(@types/react@18.3.12)(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2))(@docusaurus/utils-validation@3.6.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2))(@docusaurus/utils@3.6.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2))(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  docusaurus-plugin-search-local@2.1.2(patch_hash=a6v4izij2uj7ekkf2orkb55qpu)(@docusaurus/core@0.0.0-6119(@docusaurus/types@0.0.0-6119(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@mdx-js/react@3.1.0(@types/react@18.3.12)(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2))(@docusaurus/utils-validation@3.6.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2))(@docusaurus/utils@3.6.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2))(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@braintree/sanitize-url': 6.0.4
       '@docusaurus/core': 0.0.0-6119(@docusaurus/types@0.0.0-6119(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@mdx-js/react@3.1.0(@types/react@18.3.12)(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2)
