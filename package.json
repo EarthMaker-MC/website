@@ -36,7 +36,7 @@
     "@docusaurus/module-type-aliases": "^0.0.0-6119",
     "@docusaurus/tsconfig": "^0.0.0-6119",
     "@docusaurus/types": "^0.0.0-6119",
-    "@types/react": "^18.3.12",
+    "@types/react": "^18.3.13",
     "@types/react-slick": "^0.23.13",
     "@types/slick-carousel": "^1.6.40",
     "typescript": "^5.7.2"
