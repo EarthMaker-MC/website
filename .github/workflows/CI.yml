@@ -27,7 +27,7 @@ jobs:
         shell: bash
         run: echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
       - name: Setup pnpm cache
-        uses: actions/cache@6849a6489940f00c2f30c0fb92c6274307ccb58a #
+        uses: actions/cache@6849a6489940f00c2f30c0fb92c6274307ccb58a # v4.1.2
         with:
           path: ${{env.STORE_PATH}}
           key: ${{runner.os}}-pnpm-cache-${{ hashFiles('./pnpm-lock.yaml')}}
@@ -39,7 +39,7 @@ jobs:
         shell: bash
         run: pnpm build
       - name: Send built files to the FTP server
-        uses: SamKirkland/FTP-Deploy-Action@8e83cea8672e3fbcbb9fdafff34debf6ae4c5f65 #v4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@8e83cea8672e3fbcbb9fdafff34debf6ae4c5f65 # v4.3.5
         with:
           server: ${{secrets.FTP_HOST}}
           username: ${{secrets.FTP_USERNAME}}
