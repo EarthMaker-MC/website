@@ -15,9 +15,6 @@ updates:
       docusaurus:
         patterns:
           - "@docusaurus/*"
-    ignore:
-      - dependency-name: "@docusaurus/*"
-        versions: [">=1.0.0"]
   - package-ecosystem: "github-actions"
     directory: "/"
     reviewers:
