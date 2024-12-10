@@ -15,11 +15,11 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@docusaurus/core": "^0.0.0-6119",
-    "@docusaurus/plugin-content-blog": "^0.0.0-6119",
-    "@docusaurus/plugin-content-docs": "^0.0.0-6119",
-    "@docusaurus/preset-classic": "^0.0.0-6119",
-    "@docusaurus/theme-common": "^0.0.0-6119",
+    "@docusaurus/core": "3.6.3-canary-6168",
+    "@docusaurus/plugin-content-blog": "3.6.3-canary-6168",
+    "@docusaurus/plugin-content-docs": "3.6.3-canary-6168",
+    "@docusaurus/preset-classic": "3.6.3-canary-6168",
+    "@docusaurus/theme-common": "3.6.3-canary-6168",
     "@giscus/react": "^3.0.0",
     "@mdx-js/react": "^3.1.0",
     "@skyra/discord-components-react": "^4.0.0-alpha.37",
@@ -55,10 +55,5 @@
   },
   "engines": {
     "node": ">=20.0"
-  },
-  "pnpm": {
-    "patchedDependencies": {
-      "docusaurus-plugin-search-local": "patches/docusaurus-plugin-search-local.patch"
-    }
   }
 }
