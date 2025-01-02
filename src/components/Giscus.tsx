@@ -17,7 +17,7 @@ export default function GiscusComments() {
         strict="1"
         reactionsEnabled="1"
         inputPosition="top"
-        theme={colorMode === "light" ? "https://giscus.catppuccin.com/themes/latte.css" : "https://giscus.catppuccin.com/themes/mocha.css"}
+        theme={colorMode === "light" ? "catppuccin_latte" : "catppuccin_mocha"}
         lang={currentLocale}
         loading="lazy"
     />
