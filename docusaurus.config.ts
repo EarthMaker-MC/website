@@ -50,13 +50,13 @@ const config: Config = {
         },
         sitemap: {
           lastmod: "datetime",
-          
+
         }
       } satisfies Preset.Options,
     ],
   ],
   plugins: [require.resolve("docusaurus-plugin-image-zoom"), [
-    require.resolve("docusaurus-plugin-search-local"),{}
+    require.resolve("docusaurus-plugin-search-local"), {}
   ],
   [
     require.resolve("@docusaurus/plugin-content-docs"), {
@@ -67,7 +67,7 @@ const config: Config = {
       showLastUpdateTime: true
     }
   ]
-],
+  ],
   themeConfig: {
     zoom: {
       selector: '.markdown > img',
@@ -94,6 +94,8 @@ const config: Config = {
           docsPluginId: "maps"
         },
         { to: '/blog', label: 'Blog', position: 'left' },
+        { href: "https://download.earthmaker.world", label: "Discord (downloads)", position: "right" },
+        { type: "html", value: "<div style=\"width: 100%; height: 100%;\"><div style=\"display: flex; align-items:center;justify-content:center;\"><iframe src=\"https://github.com/sponsors/EarthMaker-MC/button\" title=\"Sponsor EarthMaker-MC\" height=\"32\" width=\"114\" style=\"border: 0; border-radius: 6px;vertical-align: inline-block\"></iframe></div></div>", position: "right" }
       ],
     },
     footer: {
