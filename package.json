@@ -27,7 +27,7 @@
     "docusaurus-plugin-image-zoom": "^3.0.1",
     "docusaurus-plugin-search-local": "^2.1.2",
     "prism-react-renderer": "^2.4.1",
-    "react": "^19.1.0",
+    "react": "^19.1.1",
     "react-dom": "^19.1.0",
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1"
