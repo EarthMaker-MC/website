@@ -73,11 +73,9 @@ const config: Config = {
       selector: '.markdown img',
       config: {
         container: {
-          top: 70,
-          left: 10,
-          right: 10,
-          bottom: 10
-        }
+          top: 50,
+        },
+        margin: 16
       }
     },
     image: 'img/logo.webp',
