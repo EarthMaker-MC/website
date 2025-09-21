@@ -70,7 +70,15 @@ const config: Config = {
   ],
   themeConfig: {
     zoom: {
-      selector: '.markdown > img',
+      selector: '.markdown img',
+      config: {
+        container: {
+          top: 70,
+          left: 10,
+          right: 10,
+          bottom: 10
+        }
+      }
     },
     image: 'img/logo.webp',
     navbar: {
