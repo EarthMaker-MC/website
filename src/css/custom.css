@@ -30,7 +30,7 @@
 }
 
 .navbar {
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(50px);
   background: linear-gradient(to bottom,
       var(--ifm-navbar-background-color) 0%,
       transparent 100%);
