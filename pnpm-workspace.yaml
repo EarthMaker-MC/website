@@ -1,3 +1,5 @@
 onlyBuiltDependencies:
   - core-js
   - core-js-pure
+packages:
+  - .
