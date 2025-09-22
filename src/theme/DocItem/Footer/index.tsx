@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import Footer from '@theme-original/DocItem/Footer';
 import { useDoc } from "@docusaurus/plugin-content-docs/lib/client/doc.js"
 import type FooterType from '@theme/DocItem/Footer';
@@ -14,8 +14,10 @@ export default function FooterWrapper(props: Props): JSX.Element {
 
   return (
     <>
-      <Footer {...props} />
-      {showComments && permalink.startsWith("/maps/") && permalink !== "/maps/" && <GiscusComments />}
+      <p>
+        <Footer {...props} />
+      </p>
+      {showComments && permalink.startsWith("/maps/") && permalink !== "/maps/" && <p><GiscusComments /></p>}
     </>
   );
 }
