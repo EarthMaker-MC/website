@@ -26,7 +26,6 @@
     "@skyra/discord-components-react": "^4.0.2",
     "clsx": "^2.1.1",
     "docusaurus-plugin-image-zoom": "^3.0.1",
-    "docusaurus-plugin-search-local": "^2.1.2",
     "prism-react-renderer": "^2.4.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
