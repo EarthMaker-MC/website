@@ -1,22 +1,72 @@
 ---
 title: We're back !
-slug: we-are-back
+slug: we-re-back-downloads-resumed
 authors:
     - key: älg
       title: console.log("We're back !")
+    - key: geek
+      title: Finally.... map download!
 ---
+import GitHubSponsorsBox from '../src/components/GitHubSponsorsBox';
 
-### Fresh update... and new maps!
-
-After several months of inactivity (well, we were active but you could had not noticed that), we're back with new maps!
-Have you ever dreamt to build in Fr*nce or Italy ?
-Well, this dream can be yours now.
-The UK, Ireland, Fr*nce, Italy, Morocco... and even more are now available for downloading!
+We're back online! Or, almost...  
+Our downloads are now available once again, and we just released new maps as well. 
 
 <!-- truncate -->
 
-### Future work
+### Fresh update... and new maps!
 
-As you may know, generating these maps is quite costy. For the moment, we did not plan to generate any other maps.
-But this does not mean, that we won't continue. We will do so when we have the financial means to cover the server costs.
+After several months of inactivity (well, we were active but you could had not noticed that), we're back with new maps!  
+Have you ever dreamt to build in Fr\*nce or Italy ?
+Well, this dream can be yours now.
+We've added the following maps:
+* Africa
+  * [Morocco](/maps/africa/morocco)
+* Asia
+  * [Korea](/maps/asia/korea)
+  * [Taiwan](/maps/asia/taiwan)
+* Europe
+  * [Benelux](/maps/europe/benelux)
+  * [Denmark](/maps/europe/denmark)
+  * [Fr\*nce](/maps/europe/france) (eww)
+  * [Germany](/maps/europe/germany)
+  * [Iberia](/maps/europe/iberia) (replaces the Portugal map)
+  * [Iceland](/maps/europe/island)
+  * [Italy](/maps/europe/italy)
+  * [Poland](/maps/europe/poland)
+  * [United Kingdom / Ireland](/maps/europe/uk-ireland)
 
+### Improved download experience
+
+The EarthMaker Assistant bot is back, with a huge change. Instead of using a single channel, we rewrote the bot to use Discord's forum channel feature.  
+You can find the map you're looking for using the search bar provided by Discord, and you can also filter by tags.  
+But behind the scenes, we reworked the way download works, leading to increased download speeds. Feel free to share additional feedback on Discord about how we can improve the bot.  
+
+### The future of EarthMaker
+
+As you may know, generating these maps is quite costy. Feel free to check the an in-depth explaination below. 
+<details>
+  <summary>More details about the server</summary>  
+
+  We used to pay almost 70€ monthly for the server. The performence/price ratio was good, for the price however, but this is still a significant amount.
+  Here are the hardware specs of thesaid server:
+  * CPU: AMD Ryzen 9 3900 (12 cores, 24 threads @ 3.1 GhZ / 4.3 GhZ in Boost mode)
+  * RAM: 128 GB (4*32 GB) ECC
+  * Storage: 2*1.92 TB (3.84 TB), in a ZFS pool  
+
+  The [map generation tool we use](https://earth.motfe.net/tiles-installation/) runs only on Windows, but since we've had some issues with Windows randomly throwing BSODs, instead of installing Windows Server on the bare-metal, we've decided to install it in a virtual machine.  
+  Unlike a "standard" virtual machine you could create in VirtualBox or VMWare Workstation, we used the KVM (Kernel Virtual Machine) hypervisor. This allows us to have little to no performence loss (about 5%, or less), as the VM is running in the Linux Kernel, right above the bare-metal hardware, instead of running in the user space.  
+  To acheive this, we installed [Proxmox Virtual Environment](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview), an open source hypervisor (yes!) which allows us to create VMs using the KVM hypervisor (heck yes!) and QEMU, while exposing a web interface for management (this is peak!).  
+  This setup is of course overkill, but it's much faster to boot Windows through this than to log in to the Hetzner web UI and then ask for a "button press". As a bonus point, Proxmox also provides a console to view the VM screen, which Hetzner does not allows, unless we order a KVM Console (or boot the server in the vKVM console, or buy a Dell server, tho they are expensive for our usecase).  
+  The installation was not complicated, but since Hetzner has not provided a Proxmox ZFS setup at the time, we've had to install it through Rescue mode, inside a QEMU virtual machine with the phyisical drives mounted. If you're interested, the instructions are [here](https://gist.github.com/GeekCornerGH/6d7ed91831360f5b34b239516b8c99a2).
+</details> 
+For the moment, we don't have any plans to generate more maps, but this does not mean, that we won't continue.  
+New maps will release when we have the financial means to cover the server costs.  
+If you wish to support our work, please consider donating via the button below:  
+<GitHubSponsorsBox />  
+The 100% of the donations will be used to cover the project's costs.
+
+### Sharing is caring
+
+Our maps are provided for free, and you can use them however you want, but we'd appreciate if you could link back to our website, on a sign, on your website, or on your socials for example.  
+As mentionned earlier, if you want to donate (both one-time and monthly are possible), you're free to sponsor us on GitHub Sponsors.
