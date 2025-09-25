@@ -55,22 +55,35 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-  plugins: [require.resolve("docusaurus-plugin-image-zoom"), [
-    require.resolve("docusaurus-plugin-search-local"), {}
-  ],
-  [
-    require.resolve("@docusaurus/plugin-content-docs"), {
-      id: "maps",
-      path: 'maps',
-      routeBasePath: "maps",
-      sidebarPath: './sidebarMaps.ts',
-      showLastUpdateTime: true
-    }
-  ]
+  plugins: [
+    require.resolve("docusaurus-plugin-image-zoom"),
+    [
+      require.resolve("@docusaurus/plugin-content-docs"), {
+        id: "maps",
+        path: 'maps',
+        routeBasePath: "maps",
+        sidebarPath: './sidebarMaps.ts',
+        showLastUpdateTime: true
+      }
+    ]
   ],
   themeConfig: {
+    algolia: {
+      appId: "UV690IPPBA",
+      apiKey: "32555649d0ffb2a3151bae9cd1a8eb5f",
+      indexName: "EarthMaker-crawler",
+      searchPagePath: "search",
+      contextualSearch: true,
+      insights: true
+    },
     zoom: {
-      selector: '.markdown > img',
+      selector: '.markdown img',
+      config: {
+        container: {
+          top: 50,
+        },
+        margin: 16
+      }
     },
     image: 'img/logo.webp',
     navbar: {
@@ -134,9 +147,8 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
     colorMode: {
-      defaultMode: "dark",
       disableSwitch: false,
-      respectPrefersColorScheme: false
+      respectPrefersColorScheme: true
     }
   } satisfies Preset.ThemeConfig,
 };

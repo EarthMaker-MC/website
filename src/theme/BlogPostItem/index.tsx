@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import BlogPostItem from '@theme-original/BlogPostItem';
 import type BlogPostItemType from '@theme/BlogPostItem';
 import type { WrapperProps } from '@docusaurus/types';
@@ -14,8 +14,10 @@ export default function BlogPostItemWrapper(props: Props): JSX.Element {
 
   return (
     <>
-      <BlogPostItem {...props} />
-      {showComments && isBlogPostPage && <GiscusComments />}
+      <p>
+        <BlogPostItem {...props} />
+      </p>
+      {showComments && isBlogPostPage && <p><GiscusComments /></p>}
     </>
   );
 }
