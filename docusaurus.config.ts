@@ -74,7 +74,8 @@ const config: Config = {
       indexName: "EarthMaker-crawler",
       searchPagePath: "search",
       contextualSearch: true,
-      insights: true
+      insights: true,
+      askAi: "GOGA9mswVXY3"
     },
     zoom: {
       selector: '.markdown img',
