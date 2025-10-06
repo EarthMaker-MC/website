@@ -39,7 +39,7 @@
     "@types/react": "^19.1.15",
     "@types/react-slick": "^0.23.13",
     "@types/slick-carousel": "^1.6.40",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
   "browserslist": {
     "production": [
