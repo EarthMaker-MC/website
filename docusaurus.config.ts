@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'EarthMaker',
-  tagline: 'Minecraft maps to scale, for everyone',
+  tagline: 'Making Minecraft earth maps to scale, one country at a time!',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -132,6 +132,16 @@ const config: Config = {
             {
               label: 'Discord',
               href: 'https://download.earthmaker.world',
+              target: "_BLANK"
+            },
+            {
+              label: "TikTok",
+              href: "https://tiktok.com/@earthmaker_mc",
+              target: "_BLANK"
+            },
+            {
+              label: "Instagram",
+              href: "https://instagram.com/earthmaker_mc",
               target: "_BLANK"
             },
             {
