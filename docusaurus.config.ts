@@ -83,11 +83,11 @@ const config: Config = {
       insights: true,
       askAi: "GOGA9mswVXY3"
     },
-    announcementBar: {
+    /*announcementBar: { // Uncomment to show
       id: "2026-crans-montana",
       content: "After this tragic accident, the EarthMaker team stands with the Crans-Montana victims and their families 🎗️🇨🇭",
       isCloseable: true
-    },
+    },*/
     zoom: {
       selector: '.markdown img',
       config: {
