@@ -1,6 +1,8 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import { RedirectOption } from '@docusaurus/plugin-client-redirects/lib/options';
+
 
 const config: Config = {
   title: 'EarthMaker',
@@ -71,7 +73,13 @@ const config: Config = {
         sidebarPath: './sidebarMaps.ts',
         showLastUpdateTime: true
       }
-    ]
+    ],
+    [require.resolve("@docusaurus/plugin-client-redirects"), {
+      redirects: [{
+        from: "/maps/earth",
+        to: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      }] satisfies RedirectOption[]
+    }]
   ],
   themeConfig: {
     algolia: {
